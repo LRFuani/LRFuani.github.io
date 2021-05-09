@@ -1,0 +1,372 @@
+/* This is my CSS Framework */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=New+Tegomin&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+:root{
+  --primary: #c94b4b;
+  --secondary: rgba(1, 9, 14, 0.5);
+  --light: #FFF
+}
+
+.moveImage{
+  position: relative;
+  top: 100px;
+}
+
+.sizingforJag{
+  position: relative;
+  top: 100px;
+}
+
+.topLeftForNav{
+  position: absolute;
+  z-index: 2;
+}
+
+.img-gradient{
+  position:relative;
+  display:inline-block;
+}
+
+
+/* 
+#002f4b,#dc4225 
+Convert HEX to RGBA - http://hex2rgba.devoth.com/
+*/
+.img-gradient:after {
+  content:'';
+  position:absolute;
+  left:0; top:0;
+  width:100%; height:100%;
+  display:inline-block;
+  background: -moz-linear-gradient(top, rgba(1, 9, 14, 0.5) 0%, rgba(197, 26, 26, 0.5) 100%); /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(197, 26, 26, 0.5)), color-stop(100%,rgba(1, 9, 14, 0.5))); /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(top, rgba(1, 9, 14, 0.5) 0%,rgba(197, 26, 26, 0.5) 100%); /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(top, rgba(1, 9, 14, 0.5) 0%,rgba(197, 26, 26, 0.5) 100%); /* Opera 11.10+ */
+  background: -ms-linear-gradient(top, rgba(1, 9, 14, 0.5) 0%,rgba(197, 26, 26, 0.5) 100%); /* IE10+ */
+  background: linear-gradient(to bottom, rgba(1, 9, 14, 0.5) 0%,rgba(197, 26, 26, 0.5) 100%); /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#002f4b', endColorstr='#00000000',GradientType=0 ); /* IE6-9 */
+}
+.img-gradient img{
+  display:block;
+}
+
+.card{
+  margin: 100px auto 0;
+  width: 200px;
+  height: 300px;
+  position: absolute;
+  z-index: 2;
+  top: 100px;
+  left: 200px;
+  color: white;
+}
+.card__inner{
+  width: 100%;
+  height: 100%;
+  transition: transform 1s;
+  transform-style: preserve-3d ;
+  cursor: pointer;
+  position: relative;
+}
+
+.card__face{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  border-radius: 16px;
+  box-shadow: 0px 3px 18px 3px rgba(0, 0, 0,0.2);
+}
+
+.card__face--front{
+  display:flex;
+  background-color: rgb(7, 4, 4, 0.5);
+}
+
+.card__face--front h2{
+  color: white;
+  font-size: 32px;;
+}
+.secondSectionCard{
+  position: fixed;
+  top: 100px;
+  left: 55px;
+  color: white;
+  font-size: 30px;
+  font-family: 'Playfair Display', serif;
+}
+.circularImage{
+  border-radius: 50%;
+  display: block;
+  position: fixed;
+  top: 5px;
+  left: 50px;
+  width: 100px;
+  height: 100px;
+  margin: 0 auto 30px;
+  background-color: #FFF;
+  border: 5px solid white;
+  object-fit: cover;
+}
+
+.thirdSection{
+  position: fixed;
+  top: 150px;
+  left: 15px;
+}
+.fourthSection{
+  position: fixed;
+  top: 175px;
+  left: 15px;
+}
+.fifthSection{
+  position: fixed;
+  top: 200px;
+  left: 15px;
+}
+.sixSection{
+  position: fixed;
+  top: 225px;
+  left: 40px;
+}
+.cardE{
+  margin: 100px auto 0;
+  width: 200px;
+  height: 300px;
+  position: absolute;
+  z-index: 2;
+  top: 100px;
+  left: 200px;
+  color: white;
+}
+.card__innerE{
+  width: 100%;
+  height: 100%;
+  transition: transform 1s;
+  transform-style: preserve-3d ;
+  cursor: pointer;
+  position: relative;
+}
+
+.card__faceE{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  border-radius: 16px;
+  box-shadow: 0px 3px 18px 3px rgba(0, 0, 0,0.2);
+}
+
+.card__face--frontE{
+  display:flex;
+  background-color: rgb(7, 4, 4, 0.5);
+}
+
+.card__face--frontE h2{
+  color: white;
+  font-size: 32px;;
+}
+.secondSectionCardE{
+  position: fixed;
+  top: 105px;
+  left: 35px;
+  font-size: 28px;
+  font-family: 'Playfair Display', serif;
+}
+.circularImageE{
+  border-radius: 50%;
+  display: block;
+  position: fixed;
+  top: 5px;
+  left: 50px;
+  width: 100px;
+  height: 100px;
+  margin: 0 auto 30px;
+  background-color: #FFF;
+  border: 5px solid white;
+  object-fit: cover;
+}
+
+.thirdSectionE{
+  position: fixed;
+  top: 150px;
+  left: 15px;
+}
+.fourthSectionE{
+  position: fixed;
+  top: 175px;
+  left: 15px;
+}
+.fifthSectionE{
+  position: fixed;
+  top: 200px;
+  left: 15px;
+}
+.sixSectionE{
+  position: fixed;
+  top: 225px;
+  left: 25px;
+}
+.cardA{
+  margin: 100px auto 0;
+  width: 200px;
+  height: 300px;
+  position: absolute;
+  z-index: 2;
+  top: 100px;
+  left: 200px;
+  color: white;
+}
+.card__innerA{
+  width: 100%;
+  height: 100%;
+  transition: transform 1s;
+  transform-style: preserve-3d ;
+  cursor: pointer;
+  position: relative;
+}
+
+.card__faceA{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  border-radius: 16px;
+  box-shadow: 0px 3px 18px 3px rgba(0, 0, 0,0.2);
+}
+
+.card__face--frontA{
+  display:flex;
+  background-color: rgb(7, 4, 4, 0.5);
+}
+
+.card__face--frontA h2{
+  color: white;
+  font-size: 32px;;
+}
+.secondSectionCardA{
+  position: fixed;
+  top: 105px;
+  left: 20px;
+  color: white;
+  font-size: 20px;
+  font-family: 'Playfair Display', serif;
+}
+.circularImageA{
+  border-radius: 50%;
+  display: block;
+  position: fixed;
+  top: 5px;
+  left: 50px;
+  width: 100px;
+  height: 100px;
+  margin: 0 auto 30px;
+  background-color: #FFF;
+  border: 5px solid white;
+  object-fit: cover;
+}
+
+.thirdSectionA{
+  position: fixed;
+  top: 150px;
+  left: 15px;
+}
+.fourthSectionA{
+  position: fixed;
+  top: 175px;
+  left: 15px;
+}
+.fifthSectionA{
+  position: fixed;
+  top: 200px;
+  left: 15px;
+}
+.sixSectionA{
+  position: fixed;
+  top: 225px;
+  font-size: 15px;
+}
+
+.secondArea{
+  height: 500px;
+  width: 100%;
+  background-color: white;
+}
+.headerTextForAnimals{
+  font-size: 50px;
+  position: relative;
+  left: 800px;
+  font-weight: bold;
+  font-family: 'New Tegomin', serif;
+}
+.AnimalList li{
+  margin-top: 50px;
+}
+
+.informationList{
+  font-family: 'Poppins', sans-serif;
+  border: 2px rgb(17, 4, 11);
+  border-radius: 15px;
+  border-style: solid;
+  list-style-type: none;
+  width: 30%;
+  padding: 20px;
+  font-size: 30px;
+}
+.informationList li{
+  margin-top: 50px;
+}
+
+.wikiLink{
+  text-decoration: none;
+}
+
+.wikiLink:visited{
+  text-decoration: none;
+  color: #EF4C3F;
+}
+
+.wikiLink:hover{
+  color: black;
+}
+
+.container-for-top{
+  width: 100%;
+}
+
+.posForImageText{
+  position: absolute;
+  left: 80%;
+  top: 80%;
+  color: rgb(202, 202, 55);
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-size: 3em;
+}
+
+.animalImage{
+  height: 60rem;
+  width: 100%;
+}
+
+.LFContainer{
+  width: 100%;
+  margin: 10px;
+}
+
+.left{
+  position: relative;
+  left: -450px;
+  margin-top: 40px;
+}
+
+.right{
+  position: relative;
+  top: -785px;
+  left: 1000px;
+}
